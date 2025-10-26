@@ -1,0 +1,130 @@
+body {
+  background-color: #1e1e1e;
+  transition: background-color 0.5s ease;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.to-do-list {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  width: 90%;
+  max-width: 600px;
+}
+
+h1 {
+  color: #f5f5f5;
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+input {
+  font-size: 1.2rem;
+  padding: 12px 15px;
+  width: 100%;
+  border: 1px solid #444444;
+  background-color: #2c2c2c;
+  color: #f5f5f5;
+  border-radius: 8px;
+  margin-right: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 20px;
+  color: #1e1e1e;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  min-width: 100px;
+}
+
+.add-button {
+  background-color: #00bcd4;
+  color: white;
+  font-size: 1.2rem;
+  min-width: 120px;
+  margin-top: 10px;
+}
+.add-button:hover {
+  background-color: #0097a7;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+}
+li {
+  font-size: 1.1rem;
+  font-weight: 400;
+  background-color: #2c2c2c;
+  color: #f5f5f5;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+li:hover {
+    background-color: #383838;
+    transform: scale(1.01);
+}
+
+.text {
+  flex: 1;
+  text-align: left;
+  padding-right: 10px;
+  word-wrap: break-word;
+}
+
+.action-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.delete-button, .move-button {
+  padding: 8px 10px;
+  margin-left: 5px;
+  font-size: 0.9rem;
+  min-width: 0;
+  box-shadow: none;
+}
+
+.delete-button {
+  background-color: #e53935;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #c62828;
+  transform: translateY(-1px);
+}
+
+.move-button {
+  background-color: #546e7a;
+  color: white;
+}
+.move-button:hover {
+  background-color: #455a64;
+  transform: translateY(-1px);
+}
